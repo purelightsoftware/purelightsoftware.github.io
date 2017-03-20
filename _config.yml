@@ -1,0 +1,20 @@
+title: Purelight Software
+description: >
+  Purelight Software, LLC is a boutique software development firm,
+  specializing in custom development projects.
+email: info@purelightsoftware.com
+baseurl: ""
+url: "https://purelightsoftware.com"
+logo: "img/purelight-software-logo.png"
+repository: purelightsoftware/purelightsoftware.github.io
+twitter:
+  username: purelightsoft
+
+markdown: kramdown
+gems:
+  - jekyll-seo-tag
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md

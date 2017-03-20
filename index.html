@@ -1,0 +1,113 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Purelight Software</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00aeef">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" integrity="sha256-lCqHBvboFPu7gyEswcz5UdbXKyB6FDOtfbOeMvUEfkY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="site.css" />
+
+  {% seo title=false %}
+</head>
+<body id="home">
+
+<div class="ui large top fixed menu">
+  <div class="ui container">
+    <a href="/" class="header item">
+      <img src="img/purelight-software-logo.png" class="header-logo" />
+    </a>
+    <a class="active item" href="#home">Home</a>
+    <a class="item" href="#about">About</a>
+    <div class="right menu">
+      <div class="item">
+        <a class="ui primary button" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui mobile only padded grid mobile-only-logo-container">
+  <div class="ui twelve wide column centered small image">
+    <img src="img/purelight-software-logo.png" />
+  </div>
+</div>
+
+<div class="ui vertical masthead center aligned segment">
+  <div class="ui text container">
+    <h1 class="ui header inverted">Software. Security. Solutions.</h1>
+    <h2>Application development and security consulting.</h2>
+    <a class="ui huge primary button" href="#contact">
+      Contact Us <i class="right arrow icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment" id="about">
+  <div class="ui middle aligned stackable grid container">
+    <div class="row">
+      <div class="eight wide column">
+        <p>Purelight Software, LLC is a boutique software development firm, specializing in custom development projects.</p>
+        <p>Our executive team has a combined 35 years of professional experience.</p>
+        <p>Contact us to learn more about our firm.</p>
+      </div>
+      <div class="six wide tablet only computer only right floated column">
+        <img src="img/purelight-software-braces-logo.png" class="ui large bordered rounded image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment form" id="contact">
+  <div class="ui text container">
+    <h1>Contact Us</h1>
+    <form action="https://formspree.io/{{ site.email }}" method="POST">
+      <input type="hidden" name="_subject" value="Website contact form" />
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="field">
+        <label for="contact">Contact info <em>(email, phone, etc.)</em></label>
+        <input type="text" id="contact" name="contact" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" cols="30" rows="10"></textarea>
+      </div>
+      <button class="ui primary labeled icon large button" type="submit">
+        <i class="send icon"></i>
+        Send message
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="ui inverted vertical center aligned footer segment">
+  <p>&copy; {{ 'now' | date: "%Y" }} Purelight Software, LLC</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js" integrity="sha256-q8WNlWH5O1Vyc9ki+nVzdAgCFXZv96jZtIl4D7GIBz8=" crossorigin="anonymous"></script>
+<script>
+  smoothScroll.init({
+    selector: 'a[href^="#"]',
+    offset: 55
+  });
+</script>
+
+</body>
+
+</html>
